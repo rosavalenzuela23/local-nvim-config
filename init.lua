@@ -39,7 +39,11 @@ require("mason-lspconfig").setup{
 	automatic_enable = true,
 }
 
-
+require("neo-tree").setup({
+  filesystem = {
+    use_libuv_file_watcher = true,
+  },
+})
 
 
 
